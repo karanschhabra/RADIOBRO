@@ -1,0 +1,7 @@
+pydicom
+numpy
+pandas
+torch
+scikit-learn
+flask
+pytest

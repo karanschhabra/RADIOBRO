@@ -1,1 +1,37 @@
-Nothing much just training a radiology model to read dicom files.
+# RADIOBRO
+
+RADIOBRO is a small project for experimenting with training a radiology model on DICOM images. The project demonstrates a basic workflow for ingesting medical imaging data, training a neural network, and serving predictions through a lightweight web interface.
+
+## Project Overview
+
+1. **DICOM Ingestion** - DICOM files are read using the [`pydicom`](https://pydicom.github.io/) library. Images can be collected from local folders or a remote PACS source. The ingestion script converts DICOM images to tensors suitable for model training.
+2. **Training Workflow** - Example training scripts in `train/` (not yet included) use PyTorch to train a classifier on the ingested data. You can adapt the dataset loading logic to your own DICOM collections. Model checkpoints are saved to the `models/` directory.
+3. **Web Interface** - A simple Flask app in `web/` (to be implemented) exposes an endpoint for uploading a DICOM file and receiving a prediction. The interface demonstrates how trained models can be integrated into an application.
+
+## Installation
+
+1. Install **Python 3.8+**.
+2. Clone this repository and install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Running the Application
+
+```bash
+python web/app.py
+```
+
+### Running Tests
+
+```bash
+pytest
+```
+
+## External Resources
+
+This project assumes access to a dataset of DICOM images. Public sources such as [The Cancer Imaging Archive](https://www.cancerimagingarchive.net/) can be used. Make sure you comply with the data usage policies and anonymize patient information as required.
+
