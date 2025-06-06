@@ -1,1 +1,25 @@
-Nothing much just training a radiology model to read dicom files.
+# RADIOBRO
+
+Training a radiology model to read DICOM files.
+
+## Installation
+
+Install the required packages using `pip`:
+
+```bash
+pip install -r requirements.txt
+```
+
+To install the project as a package (editable mode):
+
+```bash
+pip install -e .
+```
+
+## Running Tests
+
+Run the test suite with:
+
+```bash
+pytest
+```

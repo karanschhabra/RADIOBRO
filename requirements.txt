@@ -1,0 +1,6 @@
+monai
+pydicom
+flask
+streamlit
+pytest
+pytest-cov
