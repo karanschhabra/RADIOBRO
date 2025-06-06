@@ -1,0 +1,4 @@
+monai
+pydicom
+streamlit
+pytest
